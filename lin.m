@@ -1,0 +1,20 @@
+clc;
+clear all;
+close all;
+x = input('enter the 1st sequence');
+h = input('enter he 2nd sequence');
+y = conv(h,x);
+figure;
+subplot(3,1,1);
+stem(x);
+ylabel('Amplitude');
+xlabel('(a)n');
+subplot(3,1,2);
+stem(h);
+ylabel('Amplitude');
+xlabel('(b)n');
+subplot(3,1,3);
+stem(y);
+ylabel('Amplitude');
+xlabel('((c)n');
+disp('the resultant signal is');y
